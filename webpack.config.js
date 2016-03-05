@@ -23,7 +23,12 @@ module.exports = {
    },
    module: {
       preLoaders: [
-         { test: /\.tag$/, exclude: /node_modules/, loader: 'riotjs-loader', query: { type: 'none' } }
+         { 
+            test: /\.tag$/,
+            exclude: /node_modules/,
+            loader: 'riotjs-loader',
+            query: { type: 'none' }
+         }
       ],
       loaders: [
          {
